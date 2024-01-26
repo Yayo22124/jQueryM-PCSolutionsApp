@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portafolio jQuery Mobile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- CSS de Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- Slick Carousel -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- ! Inicio -->
+    <div data-role="page" id="home" data-theme="b">
+        <!-- *Header -->
+        <div data-role="header" data-theme="b">
+            <h1>Inicio</h1>
+        </div>
+
+        <!-- ? Navbar  -->
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide" data-ajax="false">Inicio</a></li>
+                    <li><a href="#about" data-icon="grid" data-transition="slide" data-ajax="false">Sobre Nosotros</a>
+                    </li>
+                    <li><a href="#contact" data-icon="star" data-transition="slide" data-ajax="false">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- * Content -->
+        <div data-role="content">
+            <!-- Título y contenido -->
+            <div class="flex flex-col items-center text-center text-balance mx-auto gap-5 mb-5">
+                <h2 class="text-3xl text-sky-500/90 font-bold">PCSolutions</h2>
+                <p><strong>Misión:</strong> Proveer servicios de reparación de equipos de cómputo con calidad y
+                    eficiencia,
+                    garantizando la satisfacción de nuestros clientes.</p>
+                <p><strong>Visión:</strong> Ser reconocidos como líderes en el sector de reparación de equipos de
+                    cómputo,
+                    destacando por nuestra excelencia y compromiso con la satisfacción del cliente.</p>
+            </div>
+
+            <!-- Card con carrusel de imágenes -->
+            <div data-role="collapsible" data-collapsed="false">
+                <h4>Portafolio</h4>
+                <div id="carrusel" class="slick-carousel w-3/4 mx-auto">
+                    <!-- Imágenes del carrusel -->
+                    <div><img src="./assets/img/pcsolutionsIMG1.jpg" alt="Imagen 1" class="w-[200px]"></div>
+                    <div><img src="./assets/img/pcsolutionsIMG2.jpg" alt="Imagen 2" class="w-[200px]"></div>
+                    <div><img src="./assets/img/pcsolutionsIMG3.jpg" alt="Imagen 3" class="w-[200px]"></div>
+                    <div><img src="./assets/img/pcsolutionsIMG4.jpg" alt="Imagen 4" class="w-[200px]"></div>
+                </div>
+            </div>
+
+            <!-- * buttons -->
+            <div class="w-full flex mx-auto justify-around">
+                <a href="#about" data-role="button" data-icon="info" data-transition="slide"
+                    data-ajax="false">Nosotros</a>
+                <a href="#contact" data-role="button" data-icon="phone" data-transition="slide"
+                    data-ajax="false">Contáctanos</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ! About -->
+    <div data-role="page" id="about" data-theme="b">
+        <!-- * Header -->
+        <div data-role="header" data-theme="b">
+            <h1>Sobre Nosotros</h1>
+        </div>
+        <!-- * Content -->
+        <div data-role="content" data-theme="b">
+
+            <!-- Historia de PCSolutions -->
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Historia de PCSolutions</h3>
+                <p class="text-pretty">PCSolutions surge a raíz de la necesidad de mi familia por el cierre de
+                    <strong>Luz y
+                        Fuerza</strong>, gracias a mi hermano, mi familia logró encontrar una nueva fuente de ingresos a
+                    partir de un Ciber Cáfe el cual también ofrecía servicios de reparación de computadoras y renta de
+                    consolas de videojuegos. <br> <br>
+                    Actualmente PCSolutions solo ofrece servicios de reparación de computadoras y yo Eli Haziel Ortiz
+                    Ramírez, soy el principal miembro encargado de los trabajos solicitados.</p>
+            </div>
+
+            <!-- Experiencia y Especialización -->
+            <div data-role="collapsible">
+                <h3>Experiencia y Especialización</h3>
+                <p class="text-pretty">Con años de experiencia, nos especializamos en la reparación de
+                    <strong>hardware</strong> y
+                    <strong>software</strong> como intalación de programas, activación de los mismos, formateo, reseteo
+                    de fábrica, respaldo de archivos y estimación de costos para la construcción de una PC y su armado.
+                </p>
+            </div>
+
+            <!-- Button to Contact -->
+            <a href="#contact" data-role="button" data-theme="a" data-icon="phone" data-transition="slide" data-ajax="false"
+                class="mt-12">Contáctanos</a>
+
+        </div>
+
+        <!-- * Footer -->
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide" data-ajax="false">Inicio</a></li>
+                    <li><a href="#about" data-icon="grid" data-transition="slide" data-ajax="false">Sobre Nosotros</a>
+                    </li>
+                    <li><a href="#contact" data-icon="star" data-transition="slide" data-ajax="false">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! Contact -->
+    <div data-role="page" id="contact" data-theme="b">
+        <!-- * Header -->
+        <div data-role="header" data-theme="b">
+            <h1>Contacto</h1>
+        </div>
+        <!-- * Content -->
+        <div data-role="content" data-theme="b">
+            <!-- Titulo -->
+            <h3 class="text-xl font-bold">Envíanos un mensaje o vísitanos</h3>
+            <!-- Información de Contacto -->
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Información de Contacto</h3>
+                <p><strong>Dirección:</strong> Puebla, Juan Galindo, Nuevo Necaxa, Venustiano Carranza N# 112</p>
+                <p><strong>Teléfono:</strong> <a href="tel:7641151920">764 115 1920</a></p>
+                <p><strong>Correo Electrónico:</strong> <a href="mailto:ya-yo22124@outlook.com" class="text-xs">ya-yo22124@outlook.com</a></p>
+            </div>
+
+            <!-- Formulario de Contacto -->
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="mt-9" data-theme="a">Enviar Mensaje</button>
+            </form>
+
+
+        </div>
+        <!-- * Footer -->
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide" data-ajax="false">Inicio</a></li>
+                    <li><a href="#about" data-icon="grid" data-transition="slide" data-ajax="false">Sobre Nosotros</a>
+                    </li>
+                    <li><a href="#contact" data-icon="star" data-transition="slide" data-ajax="false">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script>
+    $(document).on("pagecreate", "#home", function () {
+        // Inicializa el carrusel con opciones de Slick Carousel
+        $("#carrusel").slick({
+            // Configuración del carrusel (puedes ajustar según tus necesidades)
+            autoplay: true,
+            dots: true,
+            infinite: true,
+            speed: 750,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding: "4px",
+            variableWidth: true
+        });
+    });
+</script>
+
+</html>
