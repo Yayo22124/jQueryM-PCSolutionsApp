@@ -330,9 +330,11 @@
             },
             error: function (error) {
                 console.error("Error al enviar la cita:", error);
+                console.error("Respuesta del servidor:", error.responseText); // Agregado para obtener más información
                 mostrarMensaje("Error al enviar la cita", "error");
-           
+                // Manejar el error según tus necesidades
             }
+
         });
 
     }
