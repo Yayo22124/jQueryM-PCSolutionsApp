@@ -323,16 +323,15 @@
             type: "POST",
             url: `${apiUrl}/citas`, // Reemplaza con la URL correcta de tu API
             contentType: "application/json",
-            data: JSON.stringify({ cita: dataObject }), // Envolvemos los datos en un objeto
+            data: JSON.stringify({ dataObject }), // Envolvemos los datos en un objeto
             success: function (response) {
                 console.log("Cita enviada con éxito:", response);
                 mostrarMensaje("Cita enviada con éxito", "success");
             },
             error: function (error) {
                 console.error("Error al enviar la cita:", error);
-                console.error("Respuesta del servidor:", error.responseText); // Agregado para obtener más información
+                console.error("Respuesta del servidor:", error.responseText);
                 mostrarMensaje("Error al enviar la cita", "error");
-                // Manejar el error según tus necesidades
             }
 
         });
